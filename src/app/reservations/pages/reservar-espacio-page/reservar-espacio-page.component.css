@@ -1,0 +1,22 @@
+.reservation-container {
+  width: 1140px;
+  background: white;
+  height: 400px;
+  margin: 150px auto;
+  padding: 25px 90px;
+
+  h1 {
+    margin: 0 0 10px 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0069AA;
+  }
+
+  h2 {
+    margin: 15px 0 0 0;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

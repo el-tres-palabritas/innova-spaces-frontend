@@ -1,0 +1,60 @@
+<div class="layout">
+  <header>
+    <div class="toolbar">
+      <a href="/">
+        <img src="assets/innova-spaces/innova-logo.png" alt="Logo Innova">
+        <span class="logo-text">Innova Schools</span>
+      </a>
+      <div class="spacer"></div>
+      <a href="/" class="account-options">
+        <div>
+          <h2>Ximena Daytona</h2>
+          <h3>Alumna</h3>
+        </div>
+        <img src="assets/innova-spaces/innova-profile.png" alt="Ximena Daytona">
+      </a>
+    </div>
+  </header>
+  <div class="welcome-message">
+    <h1>¡Hola Ximena!</h1>
+  </div>
+  <main>
+    <div class="sidenav">
+      <p-accordion style="border: none;">
+        <p-accordion-panel value="0" style="border: none;">
+          <p-accordion-header class="sidenav-item" style="border-radius: 50px; border: 0px">
+            <div style="border-radius: 50px">
+              <img src="assets/sidenav/spaces-icon.png" alt="Innova Spaces">
+              <span>Innova Spaces</span>
+              <img class="new-icon" src="assets/sidenav/new-icon.png" alt="Nueva funcionalidad">
+            </div>
+          </p-accordion-header>
+          <p-accordion-content>
+            <div class="embedded-sidenav-item-content">
+              <div class="sidenav-item sidenav-embedded-item" (click)="goToReservarEspacio()">
+                <div>
+                  <img src="assets/sidenav/reservar.png" alt="Reservar espacio">
+                  <span>Reservar espacio</span>
+                </div>
+              </div>
+            </div>
+            <div class="embedded-sidenav-item-content">
+              <div class="sidenav-item sidenav-embedded-item" (click)="goToConsultarReservas()">
+                <div>
+                  <img src="assets/sidenav/consultar.png" alt="Consultar reservas">
+                  <span>Consultar reservas</span>
+                </div>
+              </div>
+            </div>
+          </p-accordion-content>
+        </p-accordion-panel>
+      </p-accordion>
+    </div>
+    <div style="width: 100%; height: auto; background: #F0F2F5">
+      <div class="innova-banner">
+        <img src="assets/innova-spaces/innova-banner.png" alt="Innova Banner">
+      </div>
+      <router-outlet/>
+    </div>
+  </main>
+</div>
